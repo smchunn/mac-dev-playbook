@@ -1,0 +1,164 @@
+---
+configure_dotfiles: false
+configure_osx: true
+configure_sudoers: false
+configure_dock: true
+
+dockitems_remove:
+  - Maps
+  - Reminders
+  - TV
+  - Music
+  - Podcasts
+  - News
+  - Keynote
+  - Numbers
+  - Pages
+  - Photos
+  - Contacts
+  - Calendar
+  - Notes
+  - Mail
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+dockitems_persist: 
+  - name: "Launchpad"
+    path: "/System/Applications/Launchpad.app/"
+    pos: 1
+  - name: "App Store"
+    path: "/System/Applications/App%20Store.app/"
+    pos: 2
+  - name: "Messages"
+    path: "/System/Applications/Messages.app/"
+    pos: 3
+  - name: "FaceTime"
+    path: "/System/Applications/FaceTime.app/"
+    pos: 4
+  - name: "Spotify"
+    path: "/Applications/Spotify.app/"
+    pos: 5
+  - name: "Discord"
+    path: "/Applications/Discord.app/"
+    pos: 6
+  - name: "Preview"
+    path: "/System/Applications/Preview.app/"
+    pos: 7
+  - name: "GoodTask"
+    path: "/Applications/GoodTask.app/"
+    pos: 8
+  - name: "GoodNotes"
+    path: "/Applications/GoodNotes.app/"
+    pos: 9
+  - name: "Spark"
+    path: "/Applications/Spark.app/"
+    pos: 10
+  - name: "System Preferences"
+    path: "/System/Applications/System%20Preferences.app/"
+    pos: 11
+  - name: "Safari"
+    path: "/Applications/Safari.app/"
+    pos: 12
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app/"
+    pos: 13
+  - name: "Sublime Merge"
+    path: "/Applications/Sublime Merge"
+    pos: 14
+  - name: "VSCodium"
+    path: "/Applications/VSCodium.app/"
+    pos: 15
+  - name: "IntelliJ IDEA"
+    path: "/Applications/IntelliJ%20IDEA.app/"
+    pos: 16
+  - name: "PyCharm"
+    path: "/Applications/PyCharm.app/"
+    pos: 17
+  - name: "CLion"
+    path: "/Applications/CLion.app/"
+    pos: 18
+
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+sudoers_custom_config: |
+  %admin ALL=(ALL) NOPASSWD: ALL
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/smchunn/mac-dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+  - .oh-my-zsh
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
+  - github/gh/gh
+  - go
+  - gpg
+  - httpie
+  - iperf
+  - iproute2mac
+  - libevent
+  - sqlite
+  - mcrypt
+  - nmap
+  - node
+  - nvm
+  - openjdk
+  - php
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - wget
+  - wrk
+  - zsh-history-substring-search
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - balenaetcher
+  - bartender
+  - clion
+  - discord
+  - intellij-idea
+  - iterm2
+  - onyx
+  - pycharm
+  - spotify
+  - the-unarchiver
+  - vagrant
+  - vial
+  - virtualbox
+  - virtualbox-extension-pack
+  - vscodium
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
