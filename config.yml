@@ -1,6 +1,6 @@
 ---
-configure_dotfiles: false
-configure_osx: true
+configure_dotfiles: true
+configure_osx: false
 configure_sudoers: false
 configure_dock: true
 
@@ -64,13 +64,13 @@ dockitems_persist:
     path: "/Applications/Sublime Text.app/"
     pos: 13
   - name: "Sublime Merge"
-    path: "/Applications/Sublime Merge"
+    path: "/Applications/Sublime Merge.app"
     pos: 14
   - name: "VSCodium"
     path: "/Applications/VSCodium.app/"
     pos: 15
   - name: "IntelliJ IDEA"
-    path: "/Applications/IntelliJ%20IDEA.app/"
+    path: "/Applications/IntelliJ IDEA.app/"
     pos: 16
   - name: "PyCharm"
     path: "/Applications/PyCharm.app/"
@@ -92,7 +92,7 @@ sudoers_custom_config: |
 
 dotfiles_repo: https://github.com/smchunn/mac-dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/git/mac-dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
