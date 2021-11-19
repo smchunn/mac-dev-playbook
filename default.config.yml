@@ -95,7 +95,7 @@ sudoers_custom_config: |
 
 dotfiles_repo: https://github.com/smchunn/mac-dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/git/mac-dotfiles
+dotfiles_repo_local_destination: ~/Development/Mac-Dev/mac-dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
