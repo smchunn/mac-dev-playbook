@@ -1,4 +1,4 @@
 #!/bin/zsh
-cd /Users/smchunn/git/mac-dev-playbook
+cd /Users/smchunn/Development/Mac-Dev/mac-dev-playbook
 ansible-playbook main.yml -K
 exit
