@@ -1,9 +1,12 @@
 ---
+downloads: ~/.ansible-downloads/
+
 configure_dotfiles: true
 configure_osx: true
 configure_sudoers: true
-configure_dock: true
 
+
+configure_dock: true
 dockitems_remove:
   - Maps
   - Reminders
