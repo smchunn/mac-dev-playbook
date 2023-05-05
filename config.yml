@@ -1,7 +1,7 @@
 ---
 configure_dotfiles: true
-configure_osx: false
-configure_sudoers: false
+configure_osx: true
+configure_sudoers: true
 configure_dock: true
 
 dockitems_remove:
@@ -45,39 +45,24 @@ dockitems_persist:
   - name: "Preview"
     path: "/System/Applications/Preview.app/"
     pos: 7
-  - name: "GoodTask"
-    path: "/Applications/GoodTask.app/"
-    pos: 8
   - name: "GoodNotes"
     path: "/Applications/GoodNotes.app/"
-    pos: 9
+    pos: 8
   - name: "Spark"
     path: "/Applications/Spark.app/"
-    pos: 10
+    pos: 9
   - name: "System Preferences"
     path: "/System/Applications/System%20Preferences.app/"
-    pos: 11
+    pos: 10
   - name: "Safari"
     path: "/Applications/Safari.app/"
-    pos: 12
+    pos: 11
   - name: "Sublime Text"
     path: "/Applications/Sublime Text.app/"
-    pos: 13
+    pos: 12
   - name: "Sublime Merge"
     path: "/Applications/Sublime Merge.app"
-    pos: 14
-  - name: "VSCodium"
-    path: "/Applications/VSCodium.app/"
-    pos: 15
-  - name: "IntelliJ IDEA"
-    path: "/Applications/IntelliJ IDEA.app/"
-    pos: 16
-  - name: "PyCharm"
-    path: "/Applications/PyCharm.app/"
-    pos: 17
-  - name: "CLion"
-    path: "/Applications/CLion.app/"
-    pos: 18
+    pos: 13
 
 # - name: "Sublime Text"
 #   path: "/Applications/Sublime Text.app/"
@@ -139,21 +124,24 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
+  - alfred
   - balenaetcher
   - bartender
   - clion
   - discord
+  - iina
   - intellij-idea
+  - istat-menus
   - iterm2
+  - kicad
   - onyx
+  - parallels
   - pycharm
   - spotify
+  - sublime-text
+  - sublime-merge
   - the-unarchiver
   - vagrant
-  - vial
-  - virtualbox
-  - virtualbox-extension-pack
-  - vscodium
   - zoom
 
 # See `geerlingguy.mas` role documentation for usage instructions.
