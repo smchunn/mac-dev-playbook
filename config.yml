@@ -2,11 +2,10 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
-configure_osx: true
+configure_osx: false
 configure_sudoers: true
 
-
-configure_dock: true
+configure_dock: false
 dockitems_remove:
   - Maps
   - Reminders
@@ -26,7 +25,7 @@ dockitems_remove:
 # - TV
 # - Podcasts
 # - 'App Store'
-dockitems_persist: 
+dockitems_persist:
   - name: "Launchpad"
     path: "/System/Applications/Launchpad.app/"
     pos: 1
@@ -86,14 +85,18 @@ dotfiles_files:
   - .gitignore
   - .inputrc
   - .osx
-  - .vimrc
   - .oh-my-zsh
+  - .tmux.conf
+  - .config
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
-  - bash-completion
+  - curl
   - doxygen
+  - duti
+  - fd
+  - fzf
   - gettext
   - gifsicle
   - git
@@ -104,13 +107,16 @@ homebrew_installed_packages:
   - iperf
   - iproute2mac
   - libevent
+  - lua
   - sqlite
   - mcrypt
+  - neovim
   - nmap
   - node
   - nvm
   - openjdk
   - php
+  - ripgrep
   - ssh-copy-id
   - cowsay
   - readline
@@ -127,25 +133,28 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
+  - 1password-cli
+  - alacritty
   - alfred
+  - amethyst
   - balenaetcher
   - bartender
+  - brave-browser
   - clion
   - discord
+  - font-meslo-lg-nerd-font
+  - hammerspoon
   - iina
   - intellij-idea
-  - istat-menus
-  - iterm2
+  - karabiner-elements
   - kicad
   - onyx
   - parallels
   - pycharm
-  - spotify
-  - sublime-text
   - sublime-merge
+  - sublime-text
   - the-unarchiver
   - vagrant
-  - zoom
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
